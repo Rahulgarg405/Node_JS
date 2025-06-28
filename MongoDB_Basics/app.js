@@ -1,13 +1,10 @@
-// password : q0lMhpBfwHcpJBHr
-
-// mongodb+srv://rgarg3577:q0lMhpBfwHcpJBHr@cluster0.kdkrgd8.mongodb.net/
-
 const mongoose = require("mongoose");
+require("dotenv").config();
+
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose
-  .connect(
-    "mongodb+srv://rgarg3577:q0lMhpBfwHcpJBHr@cluster0.kdkrgd8.mongodb.net/"
-  )
+  .connect(MONGODB_URI)
   .then(() => console.log("Database connected Successfully"))
   .catch((e) => console.log(e));
 
