@@ -13,6 +13,4 @@ const connectToDB = async () => {
   }
 };
 
-// c5B7PfLzMgnJc4o6
-
 module.exports = connectToDB;
