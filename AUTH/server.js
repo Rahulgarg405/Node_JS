@@ -11,6 +11,9 @@ const PORT = process.env.PORT || 3000;
 
 connectToDb();
 
+// Midllewares :
+app.use(express.json());
+
 app.use("/api/auth", authRoutes);
 
 app.listen(PORT, () => {
