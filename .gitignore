@@ -8,3 +8,4 @@
 /AUTH/node_modules
 /AUTH/.env
 /Socket/node_modules
+/Node-cluster/node_modules
